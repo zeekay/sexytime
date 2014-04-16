@@ -1,0 +1,19 @@
+{
+  "name": "notakebacks",
+  "version": "0.0.1",
+  "description": "Realtime synchronzied immutable chat application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zeekay/notakebacks"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zeekay/notakebacks/issues"
+  },
+  "homepage": "https://github.com/zeekay/notakebacks"
+}
