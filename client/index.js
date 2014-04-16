@@ -7,7 +7,15 @@ rtc.createStream({"video": true, "audio":false}, function(stream){
   rtc.attachStream(stream, 'local');
 });
 
+var clients = 0;
+
 rtc.on('add remote stream', function(stream){
+  var video = document.createElement('video');
+
+  video.id = clients++;
+
+  document.body.appendChild(video);
+
   // show the remote video
-  rtc.attachStream(stream, 'remote');
+  rtc.attachStream(stream, video.id);
 });
