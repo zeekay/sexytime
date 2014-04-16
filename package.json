@@ -1,7 +1,7 @@
 {
-  "name": "notakebacks",
+  "name": "sexytime",
   "version": "0.0.1",
-  "description": "Realtime synchronzied immutable chat application.",
+  "description": "WebRTC videochat",
   "main": "index.js",
   "scripts": {
     "test": "mocha test",
