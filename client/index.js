@@ -1,6 +1,6 @@
 var rtc = require('./webrtc.io');
 
-rtc.connect('ws://localhost:8001');
+rtc.connect('ws://192.168.7.28:8001');
 
 rtc.createStream({"video": true, "audio":false}, function(stream){
   // get local stream for manipulation
