@@ -24,6 +24,9 @@
     "cookie-parser": "~1.0.1",
     "body-parser": "~1.0.0",
     "debug": "~0.7.4",
-    "jade": "~1.3.0"
+    "jade": "~1.3.0",
+    "webrtc.io-client": "0.0.2-3",
+    "browserify-middleware": "^2.5.0",
+    "socket.io-client": "^0.9.16"
   }
 }
