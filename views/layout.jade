@@ -4,7 +4,12 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
-  body
+  body.container
     block content
+    div.clearfix.stupid-images
+        img(src='/images/canada-bieber.jpeg')
+        img(src='/images/cat.png')
+        img(src='/images/canada-bieber.jpeg')
+        img(src='/images/cat.png')
     script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
     script(src='/javascript/global.js')
