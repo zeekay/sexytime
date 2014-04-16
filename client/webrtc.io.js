@@ -44,10 +44,10 @@ if (navigator.webkitGetUserMedia) {
   } else {
     rtc = module.exports = {};
   }
-  
+
   // Toggle debug mode (console.log)
   rtc.debug = false;
-  
+
   // Holds a connection to the server.
   rtc._socket = null;
 
@@ -400,7 +400,6 @@ if (navigator.webkitGetUserMedia) {
       element.src = webkitURL.createObjectURL(stream);
     }
   };
-
 
   rtc.createDataChannel = function(pcOrId, label) {
     if (!rtc.dataChannelSupport) {
