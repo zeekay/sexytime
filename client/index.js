@@ -17,26 +17,23 @@ var user = app.user = new User({
 });
 
 user.connect(function () {
-  console.log('user connected, stream is auto-attached', user, arguments);
+  console.log('user connected, stream is attached', user, arguments);
 });
 
 rtc.on('add remote stream', function (stream) {
-  debugger;
   var peer = new User({
     id: app.peercount++,
     rtc: rtc
   });
+  app.peers['peer'+peer.id] = peer;
 
   // show the remote video
   peer.attachStream(stream);
-
   stream.onended = function () {
-    peer.onended();
+    peer.el.remove();
     delete app.peers['peer'+peer.id];
     app.peercount--;
   };
-
-  app.peers['peer'+peer.id] = peer;
 
   console.log('peer added', peer);
 });
