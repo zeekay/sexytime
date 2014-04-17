@@ -2,7 +2,7 @@ var User = require('./user.js');
 var rtc = require('./webrtc.io');
 var app = window.app = {
   port: '8001',
-  host: 'localhost',
+  host: window.location.hostname,
   user: null,
   peers: {},
   peercount: 0
